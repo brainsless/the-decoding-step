@@ -40,7 +40,7 @@ cell landed in the 486-506 tok/s band across the draws we measured. The record r
 
 Replications from this repository on 2026-07-06 (three runs, three node draws, all
 cells within the node-draw envelope): depth-6 tool 511.6 / 484.4 / 474.2, depth-7
-486.5 (first-eight median 538.0), math 405-422. Artifacts:
+486.5 (first-eight median 538.0), math 405-422, individual requests to 568.0. Artifacts:
 `artifacts/brl11_repl_r1.json`, `artifacts/brl11_repl_cleanroom.json`,
 `artifacts/brl11_repl_fovea.json`.
 
