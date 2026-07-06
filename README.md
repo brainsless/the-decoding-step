@@ -38,6 +38,27 @@ anchor cell against a pinned reference so you can read your draw. The depth-7 to
 cell landed in the 486-506 tok/s band across the draws we measured. The record read
 505.9 on 2026-07-05 (`artifacts/brl11_stage600r.json`).
 
+### What a healthy run looks like
+
+Do not kill the run because it looks quiet. The timeline:
+
+1. node boot and image pull: 1-3 min
+2. engine load: 5-15 min. You will see `Multi-thread loading shards: N/60` advancing
+   at roughly 5s per shard. This is normal, not a hang.
+3. cells print as they complete (health, then tool n=16, then math n=16)
+4. the engine reloads for the depth-7 arm and loads shards again. A second long load
+   is expected, not a crash.
+5. verdict line, artifact written. Total 35-50 min.
+
+If you launch with `--detach` (survives your terminal closing), note the app id
+(`ap-...`) printed at launch. Logs and stop work by id only for detached runs:
+`modal app logs <app-id>`, `modal app stop <app-id> --yes`. Name-based lookup
+returns "No App found" for detached runs even while they are running.
+
+Only stop a run if you see a repeating Python traceback across boot retries or the
+same boot phase restarting three or more times. The runner stops itself at its $45
+hard cap.
+
 ## Files
 
 | file | measures |

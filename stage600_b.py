@@ -23,7 +23,7 @@ Artifact: /out/brl11_stage600b.json on volume k26-draft-out (saved after every c
 Usage:
   python stage600_b.py --selftest
   modal run --detach stage600_b.py --k2 7
-  modal app stop brl11-stage600b --yes
+  modal app stop <app-id> --yes   # app id (ap-...) is printed at launch; name lookup does not work for detached runs
 """
 import json
 import os

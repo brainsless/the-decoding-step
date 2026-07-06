@@ -19,7 +19,7 @@ Usage:
   python record_run.py --build-prompts             rebuild prompts, print the pinned shas
   modal run --detach record_run.py                 baseline session
   modal run --detach record_run.py --mode record   record session
-  modal app stop brl11-record --yes           stop a detached run
+  modal app stop <app-id> --yes   # app id (ap-...) is printed at launch; name lookup does not work for detached runs
 """
 import hashlib
 import json
