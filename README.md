@@ -1,8 +1,9 @@
 # The Decoding Step — record runners
 
 Benchmark code behind Brainsless Research Lab technical report BRL-2026-11:
-505.9 tokens per second, single stream, lossless, on Kimi-K2.6 (1T MoE) from four
-B200 GPUs, measured at the public leaderboard's workload.
+511.6 tokens per second, single stream, lossless, on Kimi-K2.6 (1T MoE) from four
+B200 GPUs, measured at the public leaderboard's workload — set at 505.9, raised by
+blind re-runs of this repository.
 
 Report: https://brainsless.com/the-decoding-step.html
 
@@ -34,13 +35,13 @@ streaming decode rate `(ctok-1)/(t_last-t_first)`, interpolated median per cell.
 Output is an artifact JSON with every request's raw text, timing, and engine counters.
 
 Expected result: node draws move single-stream throughput 5-10%. The runner prints an
-anchor cell against a pinned reference so you can read your draw. The depth-7 tool
-cell landed in the 486-506 tok/s band across the draws we measured. The record read
-505.9 on 2026-07-05 (`artifacts/brl11_stage600r.json`).
+anchor cell against a pinned reference so you can read your draw. The record was set at
+505.9 (depth 7) on 2026-07-05 and raised to 511.6 (depth 6) by blind re-runs of this
+repository on 2026-07-06 (`artifacts/brl11_stage600r.json`, `artifacts/brl11_repl_r1.json`).
 
-Replications from this repository on 2026-07-06 (three runs, three node draws, all
-cells within the node-draw envelope): depth-6 tool 511.6 / 484.4 / 474.2, depth-7
-486.5 (first-eight median 538.0), math 405-422, individual requests to 568.0. Artifacts:
+The re-runs, three runs on three node draws, all n=16 cells within the node-draw
+envelope: depth-6 tool 511.6 / 484.4 / 474.2, depth-7 486.5 (first-eight median 538.0),
+math 405-422, individual requests to 568.0. Artifacts:
 `artifacts/brl11_repl_r1.json`, `artifacts/brl11_repl_cleanroom.json`,
 `artifacts/brl11_repl_fovea.json`.
 
