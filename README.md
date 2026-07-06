@@ -38,6 +38,12 @@ anchor cell against a pinned reference so you can read your draw. The depth-7 to
 cell landed in the 486-506 tok/s band across the draws we measured. The record read
 505.9 on 2026-07-05 (`artifacts/brl11_stage600r.json`).
 
+Replications from this repository on 2026-07-06 (three runs, three node draws, all
+cells within the node-draw envelope): depth-6 tool 511.6 / 484.4 / 474.2, depth-7
+486.5 (first-eight median 538.0), math 405-422. Artifacts:
+`artifacts/brl11_repl_r1.json`, `artifacts/brl11_repl_cleanroom.json`,
+`artifacts/brl11_repl_fovea.json`.
+
 ### What a healthy run looks like
 
 Do not kill the run because it looks quiet. The timeline:
