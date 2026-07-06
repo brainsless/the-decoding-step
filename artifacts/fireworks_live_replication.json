@@ -1,0 +1,341 @@
+{
+ "meta": {
+  "ts_start": "2026-07-06T05:02:59+0300",
+  "endpoint": "https://api.fireworks.ai/inference/v1/chat/completions",
+  "prompt_sha256_10k": "be01fffdb4cf55d93e049edaf22c5099d29cace9bc5fea8e3df8dcb29848a6e8",
+  "protocol": "AA-comparable: 10k-token pinned docpack prompts (record set), 2048 max_tokens, temp 0.6, streamed, decode=(ctok-1)/(t_last-t_first), interpolated median; measured from client over public internet",
+  "mode": "full",
+  "ts_end": "2026-07-06T05:12:23+0300"
+ },
+ "arms": [
+  {
+   "name": "standard-default",
+   "model": "accounts/fireworks/models/kimi-k2p6",
+   "extra": null,
+   "rows": [
+    {
+     "ttft_ms": 5957.3,
+     "decode_tok_s": 125.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9942,
+     "decode_window_s": 16.257,
+     "finish_reason": "length",
+     "prompt_idx": 0
+    },
+    {
+     "ttft_ms": 1573.5,
+     "decode_tok_s": 130.3,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10038,
+     "decode_window_s": 15.714,
+     "finish_reason": "length",
+     "prompt_idx": 1
+    },
+    {
+     "ttft_ms": 1700.1,
+     "decode_tok_s": 129.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9935,
+     "decode_window_s": 15.764,
+     "finish_reason": "length",
+     "prompt_idx": 2
+    },
+    {
+     "ttft_ms": 2002.1,
+     "decode_tok_s": 116.8,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9939,
+     "decode_window_s": 17.53,
+     "finish_reason": "length",
+     "prompt_idx": 3
+    },
+    {
+     "ttft_ms": 1391.1,
+     "decode_tok_s": 105.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9929,
+     "decode_window_s": 19.33,
+     "finish_reason": "length",
+     "prompt_idx": 4
+    },
+    {
+     "ttft_ms": 1736.4,
+     "decode_tok_s": 118.7,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9970,
+     "decode_window_s": 17.246,
+     "finish_reason": "length",
+     "prompt_idx": 5
+    },
+    {
+     "ttft_ms": 1361.1,
+     "decode_tok_s": 125.1,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10032,
+     "decode_window_s": 16.368,
+     "finish_reason": "length",
+     "prompt_idx": 6
+    },
+    {
+     "ttft_ms": 1580.1,
+     "decode_tok_s": 102.0,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9929,
+     "decode_window_s": 20.075,
+     "finish_reason": "length",
+     "prompt_idx": 7
+    },
+    {
+     "ttft_ms": 1774.3,
+     "decode_tok_s": 101.5,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9956,
+     "decode_window_s": 20.165,
+     "finish_reason": "length",
+     "prompt_idx": 8
+    },
+    {
+     "ttft_ms": 1619.6,
+     "decode_tok_s": 119.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10044,
+     "decode_window_s": 17.073,
+     "finish_reason": "length",
+     "prompt_idx": 9
+    },
+    {
+     "ttft_ms": 1354.2,
+     "decode_tok_s": 118.1,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9928,
+     "decode_window_s": 17.327,
+     "finish_reason": "length",
+     "prompt_idx": 10
+    },
+    {
+     "ttft_ms": 2230.7,
+     "decode_tok_s": 102.8,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9918,
+     "decode_window_s": 19.919,
+     "finish_reason": "length",
+     "prompt_idx": 11
+    },
+    {
+     "ttft_ms": 1454.9,
+     "decode_tok_s": 102.4,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9957,
+     "decode_window_s": 19.997,
+     "finish_reason": "length",
+     "prompt_idx": 12
+    },
+    {
+     "ttft_ms": 1852.6,
+     "decode_tok_s": 120.8,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9910,
+     "decode_window_s": 16.944,
+     "finish_reason": "length",
+     "prompt_idx": 13
+    },
+    {
+     "ttft_ms": 1489.8,
+     "decode_tok_s": 88.7,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9919,
+     "decode_window_s": 23.081,
+     "finish_reason": "length",
+     "prompt_idx": 14
+    },
+    {
+     "ttft_ms": 1369.2,
+     "decode_tok_s": 142.8,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10053,
+     "decode_window_s": 14.335,
+     "finish_reason": "length",
+     "prompt_idx": 15
+    }
+   ],
+   "summary": {
+    "n_ok": 16,
+    "decode_median_interp": 118.4,
+    "ttft_median_ms": 1599.8,
+    "ctok_mean": 2048.0
+   }
+  },
+  {
+   "name": "standard-nothink",
+   "model": "accounts/fireworks/models/kimi-k2p6",
+   "extra": {
+    "reasoning_effort": "none"
+   },
+   "rows": [
+    {
+     "ttft_ms": 1161.8,
+     "decode_tok_s": 133.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9943,
+     "decode_window_s": 15.286,
+     "finish_reason": "length",
+     "prompt_idx": 0
+    },
+    {
+     "ttft_ms": 1252.1,
+     "decode_tok_s": 139.6,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10039,
+     "decode_window_s": 14.66,
+     "finish_reason": "length",
+     "prompt_idx": 1
+    },
+    {
+     "ttft_ms": 1327.7,
+     "decode_tok_s": 163.2,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9936,
+     "decode_window_s": 12.541,
+     "finish_reason": "length",
+     "prompt_idx": 2
+    },
+    {
+     "ttft_ms": 1254.0,
+     "decode_tok_s": 158.9,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9940,
+     "decode_window_s": 12.882,
+     "finish_reason": "length",
+     "prompt_idx": 3
+    },
+    {
+     "ttft_ms": 1345.8,
+     "decode_tok_s": 166.7,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9930,
+     "decode_window_s": 12.277,
+     "finish_reason": "length",
+     "prompt_idx": 4
+    },
+    {
+     "ttft_ms": 1339.6,
+     "decode_tok_s": 137.7,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9971,
+     "decode_window_s": 14.864,
+     "finish_reason": "length",
+     "prompt_idx": 5
+    },
+    {
+     "ttft_ms": 1283.1,
+     "decode_tok_s": 128.2,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10033,
+     "decode_window_s": 15.972,
+     "finish_reason": "length",
+     "prompt_idx": 6
+    },
+    {
+     "ttft_ms": 1145.9,
+     "decode_tok_s": 164.0,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9930,
+     "decode_window_s": 12.483,
+     "finish_reason": "length",
+     "prompt_idx": 7
+    }
+   ],
+   "summary": {
+    "n_ok": 8,
+    "decode_median_interp": 149.2,
+    "ttft_median_ms": 1268.5,
+    "ctok_mean": 2048.0
+   }
+  },
+  {
+   "name": "turbo-router-default",
+   "model": "accounts/fireworks/routers/kimi-k2p6-turbo",
+   "extra": null,
+   "rows": [
+    {
+     "ttft_ms": 1297.3,
+     "decode_tok_s": 185.0,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9942,
+     "decode_window_s": 11.065,
+     "finish_reason": "length",
+     "prompt_idx": 0
+    },
+    {
+     "ttft_ms": 1273.1,
+     "decode_tok_s": 160.8,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10038,
+     "decode_window_s": 12.727,
+     "finish_reason": "length",
+     "prompt_idx": 1
+    },
+    {
+     "ttft_ms": 1285.5,
+     "decode_tok_s": 164.6,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9935,
+     "decode_window_s": 12.433,
+     "finish_reason": "length",
+     "prompt_idx": 2
+    },
+    {
+     "ttft_ms": 1637.9,
+     "decode_tok_s": 174.0,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9939,
+     "decode_window_s": 11.764,
+     "finish_reason": "length",
+     "prompt_idx": 3
+    },
+    {
+     "ttft_ms": 1362.7,
+     "decode_tok_s": 194.3,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9929,
+     "decode_window_s": 10.538,
+     "finish_reason": "length",
+     "prompt_idx": 4
+    },
+    {
+     "ttft_ms": 1340.8,
+     "decode_tok_s": 169.4,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9970,
+     "decode_window_s": 12.082,
+     "finish_reason": "length",
+     "prompt_idx": 5
+    },
+    {
+     "ttft_ms": 1570.4,
+     "decode_tok_s": 168.3,
+     "completion_tokens": 2048,
+     "prompt_tokens": 10032,
+     "decode_window_s": 12.166,
+     "finish_reason": "length",
+     "prompt_idx": 6
+    },
+    {
+     "ttft_ms": 1180.8,
+     "decode_tok_s": 161.3,
+     "completion_tokens": 2048,
+     "prompt_tokens": 9929,
+     "decode_window_s": 12.689,
+     "finish_reason": "length",
+     "prompt_idx": 7
+    }
+   ],
+   "summary": {
+    "n_ok": 8,
+    "decode_median_interp": 168.9,
+    "ttft_median_ms": 1319.0,
+    "ctok_mean": 2048.0
+   }
+  }
+ ]
+}

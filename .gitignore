@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+assets/kimi_tiktoken.model
+assets/tokenization_kimi.py
+fireworks_live_*_smoke.json
