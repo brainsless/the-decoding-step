@@ -50,6 +50,11 @@ Do not kill the run because it looks quiet. The timeline:
    is expected, not a crash.
 5. verdict line, artifact written. Total 35-50 min.
 
+If you run from CI, an agent harness, or any shell that enforces command timeouts,
+always launch with `--detach`. An attached `modal run` client that gets killed (by a
+timeout or a closed terminal) cancels the run with it — the logs will show
+"Received a cancellation signal" during a healthy boot.
+
 If you launch with `--detach` (survives your terminal closing), note the app id
 (`ap-...`) printed at launch. Logs and stop work by id only for detached runs:
 `modal app logs <app-id>`, `modal app stop <app-id> --yes`. Name-based lookup
